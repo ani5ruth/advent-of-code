@@ -2,7 +2,20 @@ package aoc_2015;
 
 public class NotQuiteLisp {
 
-  int solve(char[] input) {
+  int part1(char[] input) {
+    int res = 0;
+    for (char c : input) {
+      if (c == '(') {
+        res++;
+      } else if (c == ')') {
+        res--;
+      }
+    }
+    return res;
+  }
+
+
+  Integer part2(char[] input) {
     int res = 0;
     for (int i = 0; i < input.length; i++) {
       char c = input[i];
@@ -16,10 +29,13 @@ public class NotQuiteLisp {
         return i + 1;
       }
     }
-    return res;
+    return null;
   }
 
   public static void main(String[] args) {
-    System.out.println(new NotQuiteLisp().solve(args[0].toCharArray()));
+    NotQuiteLisp notQuiteLisp = new NotQuiteLisp();
+    char[] input = args[0].toCharArray();
+    System.out.println(notQuiteLisp.part1(input));
+    System.out.println(notQuiteLisp.part2(input));
   }
 }
