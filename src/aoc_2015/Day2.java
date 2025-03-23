@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 
-public class IWasToldThereWouldBeNoMath {
+public class Day2 {
 
   record Dimensions(int l, int w, int h) {
   }
@@ -45,8 +45,8 @@ public class IWasToldThereWouldBeNoMath {
         return new Dimensions(Integer.parseInt(xes[0]), Integer.parseInt(xes[1]), Integer.parseInt(xes[2]));
       })
       .toList();
-    IWasToldThereWouldBeNoMath iWasToldThereWouldBeNoMath = new IWasToldThereWouldBeNoMath();
-    System.out.println(iWasToldThereWouldBeNoMath.part1(dimensionsList));
-    System.out.println(iWasToldThereWouldBeNoMath.part2(dimensionsList));
+    Day2 day2 = new Day2();
+    System.out.println(day2.part1(dimensionsList));
+    System.out.println(day2.part2(dimensionsList));
   }
 }

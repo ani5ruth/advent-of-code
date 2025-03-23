@@ -1,6 +1,6 @@
 package aoc_2015;
 
-public class NotQuiteLisp {
+public class Day1 {
 
   int part1(char[] input) {
     int res = 0;
@@ -33,9 +33,9 @@ public class NotQuiteLisp {
   }
 
   public static void main(String[] args) {
-    NotQuiteLisp notQuiteLisp = new NotQuiteLisp();
+    Day1 day1 = new Day1();
     char[] input = args[0].toCharArray();
-    System.out.println(notQuiteLisp.part1(input));
-    System.out.println(notQuiteLisp.part2(input));
+    System.out.println(day1.part1(input));
+    System.out.println(day1.part2(input));
   }
 }
